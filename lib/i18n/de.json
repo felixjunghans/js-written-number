@@ -1,55 +1,198 @@
 {
   "useLongScale": true,
-  "baseSeparator": "-",
-  "unitSeparator": "und ",
+  "baseSeparator": "und ",
+  "unitSeparator": "",
   "base": {
-    "0": "Null",
-    "1": "Eins",
-    "2": "Zwei",
-    "3": "Drei",
-    "4": "Vier",
-    "5": "Fünf",
-    "6": "Sechs",
-    "7": "Sieben",
-    "8": "Acht",
-    "9": "Neun",
-    "10": "Zehn",
-    "11": "Elf",
-    "12": "Zwölf",
-    "13": "Dreizehn",
-    "14": "Vierzehn",
-    "15": "Fünfzehn",
-    "16": "Sechszehn",
-    "17": "Siebzehn",
-    "18": "Achtzehn",
-    "19": "Neunzehn",
-    "20": "Zwanzig",
-    "30": "Dreißig",
-    "40": "Vierzig",
-    "50": "Fünfzig",
-    "60": "Sechszig",
-    "70": "Siebzig",
-    "80": "Achtzig",
-    "90": "Neunzig"
+    "0": "null",
+    "1": "eins",
+    "2": "zwei",
+    "3": "drei",
+    "4": "vier",
+    "5": "fünf",
+    "6": "sechs",
+    "7": "sieben",
+    "8": "acht",
+    "9": "neun",
+    "10": "zehn",
+    "11": "elf",
+    "12": "zwölf",
+    "13": "dreizehn",
+    "14": "vierzehn",
+    "15": "fünfzehn",
+    "16": "sechzehn",
+    "17": "siebzehn",
+    "18": "achtzehn",
+    "19": "neunzehn",
+    "20": "zwanzig",
+    "21": "einundzwanzig",
+    "22": "zweiundzwanzig",
+    "23": "dreiundzwanzig",
+    "24": "vierundzwanzig",
+    "25": "fünfundzwanzig",
+    "26": "sechsundzwanzig",
+    "27": "siebenundzwanzig",
+    "28": "achtundzwanzig",
+    "29": "neunundzwanzig",
+    "30": "dreißig",
+    "40": "vierzig",
+    "50": "fünfzig",
+    "60": "sechzig",
+    "70": "siebzig",
+    "80": "achtzig",
+    "90": "neunzig",
+    "100": "hundert",
+    "200": "zweihundert",
+    "300": "dreihundert",
+    "400": "vierhundert",
+    "500": "fünfhundert",
+    "600": "sechshundert",
+    "700": "siebenhundert",
+    "800": "achthundert",
+    "900": "neunhundert",
+    "1000": "tausend"
+  },
+  "unitExceptions": {
+    "1000000": "eine Million",
+    "1000000000": "eine Milliarde",
+    "1000000000000": "eine Billion",
+    "1000000000000000": "eine Billiarde",
+    "1000000000000000000": "eine Trillion",
+    "1000000000000000000000": "eine Trilliarde",
+    "1000000000000000000000000": "eine Quadrillion",
+    "1000000000000000000000000000": "eine Quadrilliarde",
+    "1000000000000000000000000000000": "eine Quintillion",
+    "1000000000000000000000000000000000": "eine Quintilliarde",
+    "1000000000000000000000000000000000000": "eine Sextillion",
+    "1000000000000000000000000000000000000000": "eine Sextilliarde",
+    "1000000000000000000000000000000000000000000": "eine Septillion",
+    "1000000000000000000000000000000000000000000000": "eine Septilliarde",
+    "1000000000000000000000000000000000000000000000000": "eine Oktillion",
+    "1000000000000000000000000000000000000000000000000000": "eine Oktilliarde",
+    "1000000000000000000000000000000000000000000000000000000": "eine Nonillion",
+    "1000000000000000000000000000000000000000000000000000000000": "eine Nonilliarde",
+    "1000000000000000000000000000000000000000000000000000000000000": "eine Dezillion",
+    "1000000000000000000000000000000000000000000000000000000000000000": "eine Dezilliarde",
+    "1000000000000000000000000000000000000000000000000000000000000000000": "eine Undezillion",
+    "1000000000000000000000000000000000000000000000000000000000000000000000": "eine Undezilliarde",
+    "1000000000000000000000000000000000000000000000000000000000000000000000000": "eine Duodezillion",
+    "1000000000000000000000000000000000000000000000000000000000000000000000000000": "eine Duodezilliarde",
+    "1000000000000000000000000000000000000000000000000000000000000000000000000000000": "eine Tredezillion",
+    "1000000000000000000000000000000000000000000000000000000000000000000000000000000000": "eine Tredezilliarde"
   },
   "units" : [
-    "Hundert",
-    "Tausend",
-    "Million",
-    "billion",
-    "trillion",
-    "quadrillion",
-    "quintillion",
-    "sextillion",
-    "septillion",
-    "octillion",
-    "nonillion",
-    "decillion",
-    "undecillion",
-    "duodecillion",
-    "tredecillion",
-    "quattuordecillion",
-    "quindecillion"
-  ],
-  "unitExceptions": []
+    {
+      "singular": "hundert",
+      "useBaseInstead": true,
+      "useBaseException": [1],
+      "useBaseExceptionWhenNoTrailingNumbers": true
+    },
+    {
+      "singular": "tausend",
+      "avoidPrefixException": [1]
+    },
+    {
+      "singular": "Million",
+      "plural": "Millionen"
+    },
+    {
+      "singular": "Milliarde",
+      "plural": "Milliarden"
+    },
+    {
+      "singular": "Billion",
+      "plural": "Billionen"
+    },
+    {
+      "singular": "Billiarde",
+      "plural": "Billiarden"
+    },
+    {
+      "singular": "Trillion",
+      "plural": "Trillionen"
+    },
+    {
+      "singular": "Trilliarde",
+      "plural": "Trilliarden"
+    },
+    {
+      "singular": "Quadrillion",
+      "plural": "Quadrillionen"
+    },
+    {
+      "singular": "Quadrilliarde",
+      "plural": "Quadrilliarden"
+    },
+    {
+      "singular": "Quintillion",
+      "plural": "Quintillionen"
+    },
+    {
+      "singular": "Quintilliarde",
+      "plural": "Quintilliarden"
+    },
+    {
+      "singular": "Sextillion",
+      "plural": "Sextillionen"
+    },
+    {
+      "singular": "Sextilliarde",
+      "plural": "Sextilliarden"
+    },
+    {
+      "singular": "Septillion",
+      "plural": "Septillionen"
+    },
+    {
+      "singular": "Septilliarde",
+      "plural": "Septilliarden"
+    },
+    {
+      "singular": "Oktillion",
+      "plural": "Oktillionen"
+    },
+    {
+      "singular": "Oktilliarde",
+      "plural": "Oktilliarden"
+    },
+    {
+      "singular": "Nonillion",
+      "plural": "Nonillionen"
+    },
+    {
+      "singular": "Nonilliarde",
+      "plural": "Nonilliarden"
+    },
+    {
+      "singular": "Dezillion",
+      "plural": "Dezillionen"
+    },
+    {
+      "singular": "Dezilliarde",
+      "plural": "Dezilliarden"
+    },
+    {
+      "singular": "Undezillion",
+      "plural": "Undezillionen"
+    },
+    {
+      "singular": "Undezilliarde",
+      "plural": "Undezilliarden"
+    },
+    {
+      "singular": "Duodezillion",
+      "plural": "Duodezillionen"
+    },
+    {
+      "singular": "Duodezilliarde",
+      "plural": "Duodezilliarden"
+    },
+    {
+      "singular": "Tredezillion",
+      "plural": "Tredezillionen"
+    },
+    {
+      "singular": "Tredezilliarde",
+      "plural": "Tredezilliarden"
+    }
+  ]
 }
